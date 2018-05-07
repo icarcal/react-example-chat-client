@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ChatList from './ChatList';
 import ioClient from 'socket.io-client';
-
+import './Chat.css';
 class Chat extends Component {
     constructor(props) {
         super(props);
