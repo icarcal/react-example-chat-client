@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
 class ChatListItem extends Component {
-    render() {        
+    render() {
         return (
-            <li>{ this.props.message } </li>
+            <li className={(this.props.message.sent ? 'sent' : 'received')}>
+              <span className={"shadow-sm badge badge-" + (this.props.message.sent ? 'primary' : 'secondary')}>{ this.props.message.content }</span>
+            </li>
         );
     }
 }

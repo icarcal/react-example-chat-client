@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import socketLogo from './socket-logo.png';
 import './App.css';
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css.map';
 
 import Chat from '../Chat/Chat';
 

@@ -1,7 +1,32 @@
-ul {
+.chat {
+  position: relative;
+  height: 400px;
+  overflow-y: hidden;
+}
+
+.chat-content {
+  position: absolute;
+  width: 100%;
+}
+
+.chat-form {
+  position: absolute;
+  top: 90%;
+  width: 100%;
+}
+
+.chat ul {
   padding: 0;
 }
 
-ul li {
+.chat ul li {
   list-style-type: none;
+}
+
+.chat ul li.sent {
+  text-align: right;
+}
+
+.chat ul li.received {
+  text-align: left;
 }
